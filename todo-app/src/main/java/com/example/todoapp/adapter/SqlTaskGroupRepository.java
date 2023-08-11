@@ -18,9 +18,12 @@ public interface SqlTaskGroupRepository extends TaskGroupRepository,JpaRepositor
     @Override
     boolean existsByDoneIsFalseAndProject_Id(Integer ProjectId);
 
+    @Override
     boolean existsByDescription(String description);
+    @Override
 
     boolean existsById(Integer Id);
+    @Override
 
     void deleteById(Integer Id);
 
